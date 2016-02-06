@@ -29,7 +29,7 @@
             With FolderBrowserDialogRutaAdjuntos
                 .Reset() ' resetea  
                 ' leyenda  
-                .Description = " Selecciona la carpeta con los adjuntos "
+                .Description = " Selecciona la carpeta de salida "
                 ' Path por defecto: Escritorio "  
                 .SelectedPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop)
                 .RootFolder = Environment.SpecialFolder.Desktop
@@ -38,6 +38,25 @@
                 Dim ret As DialogResult = .ShowDialog ' abre el diálogo  
                 If ret = Windows.Forms.DialogResult.OK Then
                     TextBoxSalida.Text = .SelectedPath
+                End If
+                .Dispose()
+            End With
+        Catch oe As Exception
+            MsgBox(oe.Message, MsgBoxStyle.Critical)
+        End Try
+    End Sub
+
+    Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
+        Try
+            ' Configuración del FolderBrowserDialog  
+            With OpenFileDialog1
+                .Reset() ' resetea  
+                ' Path por defecto: Escritorio "  
+                .InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop)
+                ' deshabilita el botón " crear nueva carpeta "  
+                Dim ret As DialogResult = .ShowDialog ' abre el diálogo  
+                If ret = Windows.Forms.DialogResult.OK Then
+                    TextBoxProductos.Text = .FileName
                 End If
                 .Dispose()
             End With
