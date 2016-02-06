@@ -1,5 +1,5 @@
 # PrestashopHelper
-Util for bulk import attachments to prestashop site. 
+Util to bulk import attachments to prestashop site. 
 
 INPUT FIELDS:
 
