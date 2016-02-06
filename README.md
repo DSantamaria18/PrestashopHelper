@@ -11,8 +11,8 @@ Output Dir: Folder where the result will be stored.
 
 OUTPUT:
 
-ps_attachment.csv: File to be imported in the Prestashop PS_ATTACHMENT table. It contains attachments data. The remote path is forced to be your Prestashop UPLOAD folder. This will be configurable in future revisions... The 
+ps_attachment.csv: File to be imported in the Prestashop PS_ATTACHMENT table. It contains attachments data. The remote path is forced to be your Prestashop DOWNLOAD folder. This will be configurable in future revisions... The 
 ps_attachmen_lang.csv: File to be imported in the Prestashop PS_ATTACHMENT_LANG table. It contains the files' names and descriptions for the default lenguage configured in the site.
 ps_product_attachment.csv: File to be imported in the Prestashop PS_PRODUCT_ATTACHMENT table. It contains the association between products and attachments
 
-NOTE: Prior to import the result files, you must upload the files to the Prestashop's UPLOAD folder.
+NOTE: Prior to import the result files, you must upload the files to the Prestashop's DOWNLOAD folder.
