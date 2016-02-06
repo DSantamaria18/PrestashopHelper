@@ -35,6 +35,10 @@ Partial Class Form1
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.ButtonProcesar = New System.Windows.Forms.Button()
         Me.ButtonSalir = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.LabelName = New System.Windows.Forms.Label()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.LabelDescription = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'ButtonRutaAdjuntos
@@ -65,7 +69,7 @@ Partial Class Form1
         'LabelSalida
         '
         Me.LabelSalida.AutoSize = True
-        Me.LabelSalida.Location = New System.Drawing.Point(61, 141)
+        Me.LabelSalida.Location = New System.Drawing.Point(61, 146)
         Me.LabelSalida.Name = "LabelSalida"
         Me.LabelSalida.Size = New System.Drawing.Size(58, 13)
         Me.LabelSalida.TabIndex = 3
@@ -73,14 +77,14 @@ Partial Class Form1
         '
         'TextBoxSalida
         '
-        Me.TextBoxSalida.Location = New System.Drawing.Point(125, 138)
+        Me.TextBoxSalida.Location = New System.Drawing.Point(125, 143)
         Me.TextBoxSalida.Name = "TextBoxSalida"
         Me.TextBoxSalida.Size = New System.Drawing.Size(235, 20)
         Me.TextBoxSalida.TabIndex = 4
         '
         'ButtonSalida
         '
-        Me.ButtonSalida.Location = New System.Drawing.Point(366, 136)
+        Me.ButtonSalida.Location = New System.Drawing.Point(366, 141)
         Me.ButtonSalida.Name = "ButtonSalida"
         Me.ButtonSalida.Size = New System.Drawing.Size(24, 23)
         Me.ButtonSalida.TabIndex = 5
@@ -134,11 +138,47 @@ Partial Class Form1
         Me.ButtonSalir.Text = "Exit"
         Me.ButtonSalir.UseVisualStyleBackColor = True
         '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(125, 91)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(235, 20)
+        Me.TextBox1.TabIndex = 12
+        '
+        'LabelName
+        '
+        Me.LabelName.AutoSize = True
+        Me.LabelName.Location = New System.Drawing.Point(67, 94)
+        Me.LabelName.Name = "LabelName"
+        Me.LabelName.Size = New System.Drawing.Size(52, 13)
+        Me.LabelName.TabIndex = 11
+        Me.LabelName.Text = "File Title: "
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(125, 117)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(235, 20)
+        Me.TextBox2.TabIndex = 14
+        '
+        'LabelDescription
+        '
+        Me.LabelDescription.AutoSize = True
+        Me.LabelDescription.Location = New System.Drawing.Point(37, 120)
+        Me.LabelDescription.Name = "LabelDescription"
+        Me.LabelDescription.Size = New System.Drawing.Size(82, 13)
+        Me.LabelDescription.TabIndex = 13
+        Me.LabelDescription.Text = "File Description:"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(560, 195)
+        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.LabelDescription)
+        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.LabelName)
         Me.Controls.Add(Me.ButtonSalir)
         Me.Controls.Add(Me.ButtonProcesar)
         Me.Controls.Add(Me.TextBoxProductos)
@@ -169,5 +209,9 @@ Partial Class Form1
     Friend WithEvents OpenFileDialog1 As System.Windows.Forms.OpenFileDialog
     Friend WithEvents ButtonProcesar As System.Windows.Forms.Button
     Friend WithEvents ButtonSalir As System.Windows.Forms.Button
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents LabelName As System.Windows.Forms.Label
+    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents LabelDescription As System.Windows.Forms.Label
 
 End Class
