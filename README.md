@@ -4,8 +4,8 @@ Util for bulk import attachments to prestashop site.
 INPUT FIELDS:
 Attachments: Folder with the files to be associated to the products. Must be named with the product code to be associated with
 Product CSV File: File with a list of product codes. It can be taken from the Prestashop database.
+File Title: The name of the the file to be shown in PS.
 Description: String whith the description for ALL the attachments. 
-File Name: The name of the the file to be shown in PS.
 Output Dir: Folder where the result will be stored. 
 
 OUTPUT:
