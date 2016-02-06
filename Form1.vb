@@ -46,7 +46,7 @@
         End Try
     End Sub
 
-    Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
+    Private Sub ButtonProductos_Click(sender As System.Object, e As System.EventArgs) Handles ButtonProductos.Click
         Try
             ' Configuración del FolderBrowserDialog  
             With OpenFileDialog1
@@ -63,5 +63,23 @@
         Catch oe As Exception
             MsgBox(oe.Message, MsgBoxStyle.Critical)
         End Try
+    End Sub
+
+    Private Sub ButtonSalir_Click(sender As System.Object, e As System.EventArgs) Handles ButtonSalir.Click
+        Me.Close()
+
+    End Sub
+
+    Private Sub ButtonProcesar_Click(sender As System.Object, e As System.EventArgs) Handles ButtonProcesar.Click
+        Dim attFolder As New System.IO.DirectoryInfo(TextBoxRutaAdjuntos.Text)
+        Dim outDir As String = TextBoxSalida.Text
+        Dim 
+        If Not System.IO.Directory.Exists(outDir) Then
+            System.IO.Directory.CreateDirectory(outDir)
+        End If
+    End Sub
+
+    Private Sub LabelSalida_Click(sender As System.Object, e As System.EventArgs) Handles LabelSalida.Click
+
     End Sub
 End Class
